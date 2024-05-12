@@ -1,15 +1,20 @@
 #!/usr/bin/env python3
-
-# prerequisite package imports
 import numpy as np
 import matplotlib.pyplot as plt
 
+# Define the values of y
 y = np.arange(0, 11) ** 3
 
-# your code here
-
+# Define the x-axis values (0 to 10)
 x = np.arange(0, 11)
-plt.plot(x, y, color='red', linestyle='-')
-plt.xlim((0, 10))
 
+# Plot y as a solid red line
+plt.plot(x, y, 'r-')  # 'r-' specifies a solid red line
+
+# Add labels and a title
+plt.xlabel('X-Axis')
+plt.ylabel('Y-Axis')
+plt.title('Line Graph of y = x^3')
+
+# Show the plot
 plt.show()
